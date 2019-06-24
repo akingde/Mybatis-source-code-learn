@@ -265,3 +265,8 @@ public enum TransactionIsolationLevel {
 
 
 ##### ManagedTransaction
+从类注释上可以看到：`ManagedTransaction`是将事务的生命周期交给容器管理，可以理解它都是空实现，比如`commit，rollback`，`close`可以通过`closeConnection`字段来关闭。
+
+
+##### SpringManagedTransaction
+后续进入Mybatis扩展模块时展开。
