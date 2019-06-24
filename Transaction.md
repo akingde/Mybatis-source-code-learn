@@ -57,7 +57,7 @@ public interface TransactionFactory {
 `TransactionFactory`接口描述实现者需要从`Connection`或`DataSource`生产`org.apache.ibatis.transaction.Transaction`出来。
 
 接口实现类如下：
-![67f977925eb53f2dc46e90b18561633c.png](evernotecid://311BA442-9807-4482-A3A6-F96E33C77ED9/wwwevernotecom/45408501/ENResource/p4172)
+![类图](https://raw.githubusercontent.com/dchack/Mybatis-source-code-learn/master/%E5%9B%BE%E7%89%871.png)
 
 他们各自生产的`Transaction`分别是：
 * JdbcTransaction
