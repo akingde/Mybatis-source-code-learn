@@ -104,8 +104,7 @@ public interface StatementHandler {
 ```
 
 **先看一下接口下面的实现类关系：**
-![8ce28d16d5aa09bb3eb535a3370bc481.png](https://raw.githubusercontent.com/dchack/Mybatis-source-code-learn/master/pic/%E5%9B%BE%E7%89%872.png)
-
+<img src="https://raw.githubusercontent.com/dchack/Mybatis-source-code-learn/master/pic/%E5%9B%BE%E7%89%872.png" alt="Smiley face" width="820" height="400"/>
 
 ##### BaseStatementHandler
 `BaseStatementHandler`作为继承`StatementHandler`接口的抽象类存在。
