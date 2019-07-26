@@ -259,7 +259,22 @@ public enum TransactionIsolationLevel {
      */
     int TRANSACTION_SERIALIZABLE     = 8;
 ```
-关于事务隔离级别可以展开，这里埋个点。
+##### 关于事务隔离级别
+几个概念：
+* 脏读：读取的数据可以取到其他未提交事务修改的数据
+* 不可重复读：一个事务中多次读取相同的数据，因其他事务在中间修改了这个数据，导致第一个事务多次读的数据会不相同
+* 幻读：就是在一个事务提交时发现之前查的条件发生了改变
+
+隔离级别：
+* 提交读（READ_COMMITTED）只能读取到已经提交的数据
+* 未提交读（READ_UNCOMMITTED）允许脏读
+* 可重复读（REPEATABLE_READ）在同一事务中保证多次读取的数据是一致的
+* 串行读（SERIALIZABLE）每次读都需要获取表级锁，读写互相阻塞
+
+mysql中查看隔离级别设置：
+```sql
+select @@global.tx_isolation;
+```
 
 另外我们也看到`JdbcTransaction`中是需要`autoCommmit`设置true的，否则是不能完成事务功能的。
 
