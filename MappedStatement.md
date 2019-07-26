@@ -3,4 +3,8 @@
 ```xml
   <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
     select 
-    <include refid="Base_Column_List" /
+    <include refid="Base_Column_List" />
+    from unbind_phone_check
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+```
