@@ -7,7 +7,7 @@
 
 Mybatis也自带来连接池的功能，先学习下Mybatis的，相对简单的实现。
 主要涉及的类：
-![869e4598b4af3afd87a4fee48d6ad5b0.png](evernotecid://311BA442-9807-4482-A3A6-F96E33C77ED9/wwwevernotecom/45408501/ENResource/p4210)
+<img src="https://img2018.cnblogs.com/blog/367180/201908/367180-20190802142442684-849529442.png" height=240, width=480>
 
 
 ##### PoolState
